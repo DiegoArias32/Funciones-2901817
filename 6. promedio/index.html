@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio</title>
+    <script src="js/promedio.js"></script>
+</head>
+<body>
+    <script>
+        // Se solicita al usuario que ingrese las notas de la persona 1
+        let notaUno = prompt("Digite la primera nota de la persona 1")
+        let notaDos = prompt("Digite la segunda nota de la persona 1")
+        let notaTres = prompt("Digite la tercera nota de la persona 1")
+
+        // Se solicita al usuario que ingrese las notas de la persona 2
+        let cnotaUno = prompt("Digite la primera nota de la persona 2")
+        let cnotaDos = prompt("Digite la segunda nota de la persona 2")
+        let cnotaTres = prompt("Digite la tercera nota de la persona 2")
+
+        // Se muestra en la consola el resultado de promediar de las notas de la persona 2
+        console.log("El resultado de " +notaUno+ " + " +notaDos+ " + " +notaTres+ " / 3 es igual a: "
+        +notaParametro(notaUno, notaDos, notaTres))
+
+        // Se muestra en la consola el resultado de promediar de las notas de la persona 3
+        console.log("El resultado de " +cnotaUno+ " + " +cnotaDos+ " + " +cnotaTres+ " / 3 es igual a: "
+        +notaExpresion(cnotaUno, cnotaDos, cnotaTres))
+
+    </script>
+</body>
+</html>

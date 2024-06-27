@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones</title>
+    <script src="js/Operaciones.js"></script>
+</head>
+<body>
+    <script>
+        // Se solicita al usuario que elija una operación
+        let operacion = prompt("Elija una operación (suma, resta, multiplicacion, division):");
+
+        // Se realiza la operación de la suma
+        if (operacion === "suma") {
+            // Se solicitan al usuario los números a ser sumados
+            let numUno1 = prompt("Digite el primer numero para la suma 1");
+            let numDos1 = prompt("Digite el segundo numero para la suma 1");
+
+            let numUno2 = prompt("Digite el primer numero para la suma 2");
+            let numDos2 = prompt("Digite el segundo numero para la suma 2");
+
+            let numUno3 = prompt("Digite el primer numero para la suma 3");
+            let numDos3 = prompt("Digite el segundo numero para la suma 3");
+
+            let pnumeroUno = prompt("Digite el primer numero para la suma 4");
+            let pnumeroDos = prompt("Digite el segundo numero para la suma 4");
+
+            // Se llama a la función de suma con los números ingresados
+            let suma = `La suma ${numUno1} + ${numDos1} es de: ` + sumarParametro(numUno1, numDos1);
+            console.log(suma);
+            let suma2 = `La suma ${numUno2} + ${numDos2} es de: ` + sumarParametro(numUno2, numDos2);
+            console.log(suma2);
+            let suma3 = `La suma ${numUno3} + ${numDos3} es de: ` + sumarExpresion(numUno3, numDos3);
+            console.log(suma3);
+            let suma4 = `La suma ${pnumeroUno} + ${pnumeroDos} es de: ` + sumarExpresion(pnumeroUno, pnumeroDos);
+            console.log(suma4);
+
+            // Se realiza la operación de la resta
+        } else if (operacion === "resta") {
+            let numUno1 = prompt("Digite el primer numero para la resta 1");
+            let numDos1 = prompt("Digite el segundo numero para la resta 1");
+
+            let numUno2 = prompt("Digite el primer numero para la resta 2");
+            let numDos2 = prompt("Digite el segundo numero para la resta 2");
+
+            let numUno3 = prompt("Digite el primer numero para la resta 3");
+            let numDos3 = prompt("Digite el segundo numero para la resta 3");
+
+            let pnumeroUno = prompt("Digite el primer numero para la resta 4");
+            let pnumeroDos = prompt("Digite el segundo numero para la resta 4");
+
+            // Se llama a la función de resta con los números ingresados
+            let resta = `La resta ${numUno1} - ${numDos1} es de: ` + restaParametro(numUno1, numDos1);
+            console.log(resta);
+            let resta2 = `La resta ${numUno2} - ${numDos2} es de: ` + restaParametro(numUno2, numDos2);
+            console.log(resta2);
+            let resta3 = `La resta ${numUno3} - ${numDos3} es de: ` + restaExpresion(numUno3, numDos3);
+            console.log(resta3);
+            let resta4 = `La resta ${pnumeroUno} - ${pnumeroDos} es de: ` + restaExpresion(pnumeroUno, pnumeroDos);
+            console.log(resta4);
+
+
+            // Se realiza la operación de multiplicación
+        } else if (operacion === "multiplicacion") {
+            let numUno1 = prompt("Digite el primer numero para la multiplicacion 1");
+            let numDos1 = prompt("Digite el segundo numero para la multiplicacion 1");
+
+            let numUno2 = prompt("Digite el primer numero para la multiplicacion 2");
+            let numDos2 = prompt("Digite el segundo numero para la multiplicacion 2");
+
+            let numUno3 = prompt("Digite el primer numero para la multiplicacion 3");
+            let numDos3 = prompt("Digite el segundo numero para la multiplicacion 3");
+
+            let anumeroUno = prompt("Digite el primer numero para la multiplicacion 4");
+            let anumeroDos = prompt("Digite el segundo numero para la multiplicacion 4");
+
+
+            // Se llama a la función de multiplicación con los números ingresados
+            let multiplicacion = `La multiplicacion ${numUno1} * ${numDos1} es de: ` + multiParametro(numUno1, numDos1);
+            console.log(multiplicacion);
+            let multiplicacion2 = `La multiplicacion ${numUno2} * ${numDos2} es de: ` + multiParametro(numUno2, numDos2);
+            console.log(multiplicacion2);
+            let multiplicacion3 = `La multiplicacion ${numUno3} * ${numDos3} es de: ` + multiExpresion(numUno3, numDos3);
+            console.log(multiplicacion3);
+            let multiplicacion4 = `La multiplicacion ${anumeroUno} * ${anumeroDos} es de: ` + multiExpresion(anumeroUno, anumeroDos);
+            console.log(multiplicacion4);
+
+            // Se realiza la operación de la división
+        } else if (operacion === "division") {
+            let numUno1 = prompt("Digite el primer numero para la division 1");
+            let numDos1 = prompt("Digite el segundo numero para la division 1");
+
+            let numUno2 = prompt("Digite el primer numero para la division 2");
+            let numDos2 = prompt("Digite el segundo numero para la division 2");
+
+            let numUno3 = prompt("Digite el primer numero para la division 3");
+            let numDos3 = prompt("Digite el segundo numero para la division 3");
+
+            let bnumeroUno = prompt("Digite el primer numero para la division 4");
+            let bnumeroDos = prompt("Digite el segundo numero para la division 4");
+
+
+            // Se llama a la función de division con los números ingresados
+
+            let division = `La division ${numUno1} / ${numDos1} es de: ` + divisionParametro(numUno1, numDos1);
+            console.log(division);
+            let division2 = `La division ${numUno2} / ${numDos2} es de: ` + divisionParametro(numUno2, numDos2);
+            console.log(division2);
+            let division3 = `La division ${numUno3} / ${numDos3} es de: ` + divisionExpresion(numUno3, numDos3);
+            console.log(division3);
+            let division4 = `La division ${bnumeroUno} / ${bnumeroDos} es de: ` + divisionExpresion(bnumeroUno, bnumeroDos);
+            console.log(division4);
+        }
+    </script>
+</body>
+</html>

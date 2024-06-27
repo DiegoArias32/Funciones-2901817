@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edad</title>
+    <script src="js/edad.js"></script>
+</head>
+<body>
+    <script>
+        let anioActual = 2024;
+
+        // Muestra un mensaje con el año actual
+        alert("El año actual es: " +anioActual);
+        // Se solicita al usuario que escriba el año de nacimiento de la persona
+        let anioNacimiento = prompt("Digite el año de nacimiento de la persona 1");
+        let anioNacimiento2 = prompt("Digite el año de nacimiento de la persona 2");
+
+
+        // Se muestra en la consola el resultado de la función edadParametro()
+        console.log(edadParametro(anioActual, anioNacimiento));
+        // Se muestra en la consola el resultado de la función edadPromedio()
+        console.log(edadExpresion(anioActual, anioNacimiento2))
+
+    </script>
+</body>
+</html>

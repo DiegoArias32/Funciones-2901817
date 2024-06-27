@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectángulo Mayor</title>
+    <!-- El script tag incluye el archivo RectanguloMayor.js, el cual contiene las funciones para calcular el área de los rectángulos -->
+    <script src="js/RectanguloMayor.js"></script>
+</head>
+<body>
+    <script>
+
+        // Solicita el valor de la primera 
+        baseUno = prompt("Digite la primera base (1)")
+        alturaUno = prompt("Digite la primera altura (1)")
+        baseDos = prompt("Digite la segunda base (1)")
+        alturaDos = prompt("Digite la segunda altura (1)")
+
+        // Solicita el valor de la tercera
+        bbaseUno = prompt("Digite la primera base (2)")
+        balturaUno = prompt("Digite la primera altura (2)")
+        bbaseDos = prompt("Digite la segunda base (2)")
+        balturaDos = prompt("Digite la segunda altura (2)")
+
+        // Imprime el resultado de la función rectanMayorParametro
+        console.log(rectanMayorParametro(baseUno, baseDos, alturaUno, alturaDos))
+        // Imprime el resultado de la función rectanMayorPromedio
+        console.log(rectanMayorExpresion(bbaseUno, bbaseDos, balturaUno, balturaDos))
+
+    </script>
+</body>
+</html>

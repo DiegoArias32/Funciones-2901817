@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor de edad</title>
+    <script src="js/MayorDeEdad.js"></script>
+</head>
+<body>
+    <script>
+
+        let anioActual = 2024;
+
+        // Muestra un mensaje con el año actual
+        alert("El año actual es: " +anioActual);
+
+        // Solicita el año de nacimiento de la persona
+        anioNacimiento = prompt("Digite el año de nacimiento de la persona 1")
+        banioNacimiento = prompt("Digite el año de nacimiento de la persona 2")   
+
+
+        // Imprime el resultado de la función edadMayorParametro
+        console.log(edadMayorParametro(anioActual, anioNacimiento))
+        // Imprime el resultado de la función edadMayorPromedio
+        console.log(edadMayorExpresion(anioActual, banioNacimiento))
+    </script>
+</body>
+</html>
